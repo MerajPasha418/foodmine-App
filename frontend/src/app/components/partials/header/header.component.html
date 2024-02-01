@@ -1,0 +1,54 @@
+<!-- <header>
+  <div class="container">
+    <a routerLink="/" class="logo">Food Mine</a>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/login">Login</a>
+      </li>
+      <li class="menu-container">
+        <a routerLink="/dashboard">User</a>
+        <div class="menu">
+          <a routerLink="/profile">Profile</a>
+          <a routerLink="/orders">Orders</a>
+          <a>Logout</a>
+        </div>
+      </li>
+      <li>
+        <a routerLink="/cart-page"> Cart <span>3</span> </a>
+      </li>
+    </ul>
+  </nav>
+</header> -->
+<!-- bootstrap navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Food Mine</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/dashboard">User</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/profile">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/orders">Orders</a>
+            
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+        </li>
+        <li class="d-flex cart">
+            <a class="nav-link mr-2" href="#" routerLink="/cart-page"> Cart <span>0</span> </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
