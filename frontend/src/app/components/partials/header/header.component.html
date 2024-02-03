@@ -47,7 +47,7 @@
             <a class="nav-link" href="#">Logout</a>
         </li>
         <li class="d-flex cart">
-            <a class="nav-link mr-2" href="#" routerLink="/cart-page"> Cart <span>0</span> </a>
+            <a class="nav-link mr-2" href="#" routerLink="/cart-page"> Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span> </a>
         </li>
       </ul>
     </div>

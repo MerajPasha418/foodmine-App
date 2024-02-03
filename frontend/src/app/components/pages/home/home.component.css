@@ -22,6 +22,12 @@ ul{
     top: 0.5rem;
     right: 1rem;
     font-size: 1.2rem;
+    color: #e72929;
+    font-family:fantasy;
+}
+
+.favorite.not{
+    color: black;
 }
 
 .stars{

@@ -26,8 +26,9 @@ export class CartService {
 
   // remove from cart function
   removeFromCart(foodId : string): void{
-    this.cart.items = this.cart.items
-    .filter(item => item.food.id === foodId);
+    this.cart.items = this.cart.items.filter(item => item.food.id !== foodId);
+    console.log('this.cart.items', this.cart.items);
+    
     this.setCartToLocalStorage();
   }
 
@@ -64,6 +65,8 @@ export class CartService {
     .reduce((prevSum, currentItem) => prevSum + currentItem.quantity ,0);
     // storing in LocalStorage
     const caryJson = JSON.stringify(this.cart);
+    console.log('caryJson', caryJson);
+    
     localStorage.setItem('Cart',caryJson);
     this.cartSubject.next(this.cart);
   }

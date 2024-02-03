@@ -43,10 +43,11 @@ img{
 .favorite{
     color: #e72929;
     font-size: 2.5rem;
+    font-family:fantasy;
 }
 
 .favorite.not{
-    color: gray;
+    color:black;
 }
 
 .origins{
